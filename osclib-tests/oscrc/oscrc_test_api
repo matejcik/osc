@@ -1,0 +1,10 @@
+[general]
+apiurl = https://obs.example.com
+
+[https://obs.example.com]
+user=grace
+pass=hopper
+
+[https://obs.example.org]
+user=sally
+pass=floyd

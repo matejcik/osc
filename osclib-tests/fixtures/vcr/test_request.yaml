@@ -1,0 +1,119 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.2]
+    method: GET
+    uri: https://api.opensuse.org/source/openSUSE:Factory/osc
+  response:
+    body: {string: "<directory name=\"osc\" rev=\"119\" vrev=\"1\" srcmd5=\"f8e23aca049a72784dcd88122509ff3c\">\n
+        \ <serviceinfo code=\"succeeded\" xsrcmd5=\"54d962de8b0af3066ed6da0e455d7450\"
+        />\n  <entry name=\"PKGBUILD\" md5=\"7895859f2e356434913cfa7c316deae6\" size=\"490\"
+        mtime=\"1494316603\" />\n  <entry name=\"_service\" md5=\"00982f69ef3e6e2dbf3bc239f87b6bbe\"
+        size=\"447\" mtime=\"1494316603\" />\n  <entry name=\"debian.changelog\" md5=\"9c2a5a0967dba2f736e24edf3e041bbf\"
+        size=\"42325\" mtime=\"1494316603\" />\n  <entry name=\"debian.tar.gz\" md5=\"321df6fda50d16cf0ed2d6b766f8c280\"
+        size=\"2222\" mtime=\"1477498827\" />\n  <entry name=\"osc-0.158.0.tar.gz\"
+        md5=\"1e274f57cef42d9c04e718336a76d4a4\" size=\"346966\" mtime=\"1494316604\"
+        />\n  <entry name=\"osc.changes\" md5=\"67ad954fc6100b4c0248a80d54d16845\"
+        size=\"94130\" mtime=\"1494316604\" />\n  <entry name=\"osc.dsc\" md5=\"14624aa1b0d4c9a895bc66045b76428e\"
+        size=\"209\" mtime=\"1494316604\" />\n  <entry name=\"osc.spec\" md5=\"23dd247c0ebfe443349bd33869914879\"
+        size=\"4505\" mtime=\"1494316604\" />\n</directory>\n"}
+    headers:
+      Cache-Control: [no-transform, no-cache]
+      Connection: [Keep-Alive]
+      Content-Length: ['985']
+      Content-Type: [text/xml]
+      Date: ['Tue, 22 Aug 2017 13:05:56 GMT']
+      Keep-Alive: ['timeout=15, max=100']
+      Server: [Apache/2.4.23 (Linux/SUSE)]
+      Set-Cookie: [openSUSE_session=0365b15ab2692f2e4eacda6f1287b5f9; path=/; Max-Age=86400;
+          Secure; HttpOnly; domain=.opensuse.org]
+      Strict-Transport-Security: [max-age=31536000]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Opensuse-APIVersion: [2.8.51.git20170821T120950.5159e7630]
+      X-Opensuse-Runtimes: ['{"view":null,"db":20.06545,"backend":0,"xml":0}']
+      X-Powered-By: [Phusion Passenger 5.0.30]
+      X-Request-Id: [a766c1da-2318-4ed3-a2c6-1a3418bc5937]
+      X-Runtime: ['0.043894']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.2]
+    method: GET
+    uri: https://api.opensuse.org/source/openSUSE:Factory/does%20not%20exist
+  response:
+    body:
+      string: !!binary |
+        H4sIADQsnFkAA7IpLkksKS1WSM5PSbVVKs3Lzssvz4svSEzOTkxPVbLjUlCwKS7NzU0sqrTLL0jN
+        Cw4NdrVyS0wuyS+q1E/JTy1WyMsvUUityCwusdGHKeQCMsGm2nEBAAAA//8DAI1QzfpfAAAA
+    headers:
+      Cache-Control: [no-cache]
+      Connection: [Keep-Alive]
+      Content-Encoding: [gzip]
+      Content-Type: [application/xml; charset=utf-8]
+      Date: ['Tue, 22 Aug 2017 13:05:56 GMT']
+      Keep-Alive: ['timeout=15, max=100']
+      Server: [Apache/2.4.23 (Linux/SUSE)]
+      Set-Cookie: [openSUSE_session=70e7e4be5ba775b84061b4c82abf4d49; path=/; Max-Age=86400;
+          Secure; HttpOnly; domain=.opensuse.org]
+      Status: [404 Not Found]
+      Strict-Transport-Security: [max-age=31536000]
+      Vary: [Accept-Encoding]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Opensuse-APIVersion: [2.8.51.git20170821T120950.5159e7630]
+      X-Opensuse-Errorcode: [unknown_package]
+      X-Opensuse-Runtimes: ['{"view":1.587824895977974,"db":44.79696800000001,"backend":0,"xml":0}']
+      X-Powered-By: [Phusion Passenger 5.0.30]
+      X-Request-Id: [89c88400-b5f2-4520-8c80-90c5150eb3e1]
+      X-Runtime: ['0.091194']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: see a thing
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['11']
+      User-Agent: [python-requests/2.18.2]
+    method: POST
+    uri: https://api.opensuse.org/source/openSUSE:Factory/does%20not%20exist?hello=world
+  response:
+    body:
+      string: !!binary |
+        H4sIADQsnFkAAzzNQQqAIBBA0b2nGLxAFzCvUFD7EB3MxWg5Y9Hti6B2f/P4hsVJY/AlYK8pMacc
+        l81VRyhYtVUAhhuRq5cdh2mGintDFjiTrKUJxHRgBk8BfmW6T6gn34FVNwAAAP//AwB3yQYtagAA
+        AA==
+    headers:
+      Cache-Control: [no-cache]
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Type: [application/xml; charset=utf-8]
+      Date: ['Tue, 22 Aug 2017 13:05:56 GMT']
+      Server: [Apache/2.4.23 (Linux/SUSE)]
+      Set-Cookie: [openSUSE_session=68486e01d81882d9a588295584d18100; path=/; Max-Age=86400;
+          Secure; HttpOnly; domain=.opensuse.org]
+      Status: [400 Bad Request]
+      Strict-Transport-Security: [max-age=31536000]
+      Vary: [Accept-Encoding]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Opensuse-APIVersion: [2.8.51.git20170821T120950.5159e7630]
+      X-Opensuse-Errorcode: [missing_parameter]
+      X-Opensuse-Runtimes: ['{"view":1.6088346019387245,"db":23.191767,"backend":0,"xml":0}']
+      X-Powered-By: [Phusion Passenger 5.0.30]
+      X-Request-Id: [888ceb9e-1e43-4672-9771-c23fbd44d29d]
+      X-Runtime: ['0.044467']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 400, message: Bad Request}
+version: 1
