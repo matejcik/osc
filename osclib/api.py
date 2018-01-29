@@ -30,6 +30,9 @@ class Api():
         elif self.username is None or self.password is None:
             raise Exception("Must specify both username and password")
 
+    def __repr__(self):
+        return "<{}@{}>".format(self.username, self.apiurl)
+
     def request(self, path, query=None, method="GET", data=None):
         if isinstance(path, list):
             path = '/'.join(path)

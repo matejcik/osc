@@ -36,12 +36,10 @@ def search(api, source=None, target=None, user=None, req_type=None, state=DEFAUL
     xpath += _xif("action/@type", req_type)
 
     if not xpath:
-        raise err.WrongArgs("Something went wrong, the query string is empty.")
+        raise ValueError("Something went wrong, the query string is empty.")
 
     xpathstr = "(" + ") and (".join(xpath) + ")"
     if conf.config['verbose'] > 1:
         print("[ {} ]".format(xpath))
 
-    xmlresult = api.xml("/search/request", match=xpathstr)
-    collection = xmlresult["request"]
-    return [Request().read(r) for r in xmlresult["request"].findall("request")]
+    return api.get_xml("/search/request", query={"match": xpathstr})
